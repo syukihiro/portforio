@@ -1,0 +1,378 @@
+$logocolor: #FF385C;
+$sub-title: #717171;
+$input-area-color: #DDDDDD;
+$max-width: 1280px;
+$sub-title-font: 14px;
+
+@mixin input-area {
+  width: 90%;
+  height: 14%;
+  margin: 0 auto;
+  box-shadow: $input-area-color 0 0 0 1px inset;
+  border-radius: 12px;
+}
+
+@mixin border {
+  width: 1px;
+  height: 40px;
+  background-color: $input-area-color;
+  display: inline-block;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+}
+
+@mixin contain {
+  height: 70%;
+  width: 33%;
+  float: left;
+  padding: 1%;
+  position: relative;
+}
+
+@mixin contain-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+@mixin supper-host {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  top: 5%;
+  left: 5%;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  height: 23px;
+  width: 110px;
+  text-align: center;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  padding-top: 0.5%;
+}
+
+body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+header {
+  max-width: $max-width;
+  width: 100%;
+  height: 64px;
+  margin: 0 auto;
+}
+
+.header-left {
+  height: 100%;
+  float: left;
+  color: $logocolor;
+  padding: 1%;
+  display: table;
+  i{
+    font-size: 2rem;
+  }
+  .logo {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .title{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10%;
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+}
+
+.header-right{
+  float: right;
+  padding: 1%;
+  height: 100%;
+  display: table;
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+main {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+// メイントップ
+.main-top {
+  height: 500px;
+  position: relative;
+  label {
+    font-size: 0.6rem;
+    display: block;
+  }
+  input {
+    display: block;
+  }
+
+  &_left{
+    width: 30%;
+    height: 80%;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    float: left;
+    background-color: #FFF;
+    margin-top: 5%;
+    &__header {
+      padding: 5%;
+      p{
+        color: $sub-title;
+        font-size: $sub-title-font;
+      }
+    }
+
+    &__input-area{
+      @include input-area();
+      label {
+        padding: 3% 0 0 4%;
+      }
+      input {
+        width: 95%;
+        margin-left: 4%;
+        &:focus{
+          outline: 0;
+        }
+      }
+    }
+
+    &__input-date{
+      @include input-area();
+      margin-top: 3%;
+      position: relative;
+      label {
+        padding: 5% 0 0 7%;
+      }
+      input {
+        width: 95%;
+        padding-left: 5%;
+        &:focus{
+          outline: 0;
+        }
+      }
+      &__left{
+        width: 50%;
+        position: absolute;
+        height: 100%;
+        border-radius: 12px;
+      }
+      &__right{
+        width: 50%;
+        position: absolute;
+        height: 100%;
+        border-radius: 12px;
+        float: right;
+        right: 0;
+        top: 0;
+      }
+      .border {
+        @include border();
+      }
+    }
+
+    &__input-number{
+      @include input-area();
+      margin-top: 3%;
+      position: relative;
+      label {
+        padding: 5% 0 0 5%;
+      }
+      select {
+        width: 90%;
+        padding-left: 5%;
+        &:focus{
+          outline: 0;
+        }
+      }
+      &__parent{
+        width: 50%;
+        position: absolute;
+        height: 100%;
+        border-radius: 12px;
+      }
+      &__children{
+        width: 50%;
+        position: absolute;
+        height: 100%;
+        border-radius: 12px;
+        float: right;
+        right: 0;
+        top: 0;
+      }
+      .border {
+        @include border();
+      }
+    }
+
+    &__input-buttom {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 5%;
+      height: 12%;
+      input {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        background-color: $logocolor;
+        color: #FFF;
+      }
+    }
+  }
+
+  &_right {
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    img {
+      border-radius: 12px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.main-second {
+  width: 100%;
+  height: 700px;
+  padding-top: 3%;
+  .title {
+    width: 100%;
+    height: 10%;
+    padding-left: 1%;
+    p {
+      color: $sub-title;
+    }
+  }
+
+  .contain {
+    @include contain();
+    &__image {
+      width: 100%;
+      height: 62%;
+      span {
+        @include supper-host();
+      }
+    }
+    img {
+      @include contain-img();
+    }
+
+    &__text-area{
+      .top{
+        color: $sub-title;
+        font-size: 0.8rem;
+      }
+      .detail {
+        padding-top: 4%;
+        line-height: 22px;
+        font-size: 1rem;
+        span {
+          font-weight: 600;
+          width: 100%;
+          display: block;
+        }
+      }
+      .price {
+        margin-top: 8%;
+        height: 45px;
+        width: 150px;
+        border: solid 1px #222;
+        border-radius: 12px;
+        padding: 10px;
+        color: #222;
+      }
+    }
+  }
+}
+
+.main-third {
+  width: 100%;
+  height: 500px;
+  .title {
+    padding-left: 1%;
+    p{
+      color: $sub-title;
+    }
+  }
+  .contain {
+    @include contain();
+    img {
+      @include contain-img();
+    }
+    &__text-area{
+      padding-top: 1%;
+      p{
+        color: $sub-title;
+      }
+    }
+  }
+}
+
+.main-force {
+  width: 100%;
+  height: 250px;
+  .title {
+    padding-left: 1%;
+  }
+  .card {
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin: 1%;
+    border: 1px solid rgba(0, 0, 0, 0.02) !important;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12) !important;
+    border-radius: 12px !important;
+    i{
+      padding: 13% 0 0 15%;
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-weight: 500;
+      padding: 2% 0 0 14%;
+    }
+  }
+}
+
+.main-fifth {
+  width: 100%;
+  height: 800px;
+  &__title {
+    padding-left: 1%;
+  }
+  .fifth-contain {
+    height: 45%;
+    width: 25%;
+    float: left;
+    padding: 1%;
+    position: relative;
+    img {
+      @include contain-img();
+    }
+    .title {
+      span{
+        @include supper-host();
+      }
+    }
+  }
+}

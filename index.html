@@ -3,87 +3,415 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+    <div class="header-left">
+      <span class="logo"><i class="fab fa-airbnb"></i></span>
+      <span class="title">airbnb</span>
+    </div>
+    <div class="header-right">
+      <span>登録する</span>
+      <span>ログイン</span>
     </div>
   </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
+  <main>
+    <div class="main-top">
+      <div class="main-top_left">
+        <div class="main-top_left__header">
+          <h1>日本の貸別荘</h1>
+          <p>Airbnbでユニークな宿泊施設を見つける</p>
+        </div>
+        <div class="main-top_left__input-area">
+          <label for="area">エリア</label>
+          <input type="text" id="area" value="日本">
+        </div>
+        <div class="main-top_left__input-date">
+          <div class="main-top_left__input-date__left">
+            <label for="checkin">チェックイン</label>
+            <input type="date" id="checkin" placeholder="日付を入力">
+          </div>
+          <span class="border"></span>
+          <div class="main-top_left__input-date__right">
+            <label for="checkout">チェックアウト</label>
+            <input type="date" id="checkout" placeholder="日付を入力" autocomplete="off">
+          </div>
+        </div>
+        <div class="main-top_left__input-number">
+          <div class="main-top_left__input-number__parent">
+            <label for="parent">大人</label>
+            <select name="parent">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+            </select>
+          </div>
+          <span class="border"></span>
+          <div class="main-top_left__input-number__children">
+            <label for="children">子供</label>
+            <select name="children">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+            </select>
+          </div>
+        </div>
+        <div class="main-top_left__input-buttom">
+          <input type="submit" value="&#xf002; 探す" class="fas">
+        </div>
+      </div>
+      <div class="main-top_right">
+        <picture>
+          <source srcset="img/room1.jpg" />
+          <img src="img/room2.jpg" alt="日本の貸別荘" />
+        </picture>
       </div>
     </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
+    <div class="main-second">
+      <div class="title">
+        <h2>日本で高評価のバケーションレンタル</h2>
+        <p>立地や清潔さなどの点でゲストに高評価のリスティングです。</p>
       </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
+      <div class="contain">
+        <div class="contain__image">
+          <div class="contain__image__title">
+            <span>スーパーホスト</span>
+            <img src="img/room3.jpg" alt="部屋">
           </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+        <div class="contain__text-area">
+          <p class="top">マンション・アパート貸切・ゲスト3人・ベット1台・1バスルーム</p>
+          <p class="detail"><span>10 min walk Niigata Sta!(Free Wi-Fi)Cozy1room[411]</span>10 minutes walk Niigata Station. Access is good!(Along the main street) ※※※The room is on the 4th floor.(no elevator)※※※ To convenience store(7-11) walk 5min. There is a double bed and futon bedding(Semi-double)....</p>
+          <a href="#">
+            <div class="price">
+              <span>1泊¥ 2,757から</span>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
         </div>
       </div>
-      <div class="clear"></div>
+      <div class="contain">
+        <div class="contain__image">
+          <div class="contain__image__title">
+            <span>スーパーホスト</span>
+            <img src="img/room4.jpg" alt="部屋">
+          </div>
+        </div>
+        <div class="contain__text-area">
+          <p class="top">マンション・アパート貸切・ゲスト3人・ベット1台・1バスルーム</p>
+          <p class="detail"><span>10 min walk Niigata Sta!(Free Wi-Fi)Cozy1room[411]</span>10 minutes walk Niigata Station. Access is good!(Along the main street) ※※※The room is on the 4th floor.(no elevator)※※※ To convenience store(7-11) walk 5min. There is a double bed and futon bedding(Semi-double)....</p>
+          <a href="#">
+            <div class="price">
+              <span>1泊¥ 2,757から</span>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contain">
+        <div class="contain__image">
+          <div class="contain__image__title">
+            <span>スーパーホスト</span>
+            <img src="img/room5.jpg" alt="部屋">
+          </div>
+        </div>
+        <div class="contain__text-area">
+          <p class="top">マンション・アパート貸切・ゲスト3人・ベット1台・1バスルーム</p>
+          <p class="detail"><span>10 min walk Niigata Sta!(Free Wi-Fi)Cozy1room[411]</span>10 minutes walk Niigata Station. Access is good!(Along the main street) ※※※The room is on the 4th floor.(no elevator)※※※ To convenience store(7-11) walk 5min. There is a double bed and futon bedding(Semi-double)....</p>
+          <a href="#">
+            <div class="price">
+              <span>1泊¥ 2,757から</span>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
+    <div class="main-third">
+      <div class="title">
+        <h2>あらゆるスタイルのバケーションレンタル</h2>
+        <p>ぴったりな広さのお部屋を見つけましょう</p>
       </div>
-      <span class="btn message">さっそく開発する</span>
+      <div class="contain">
+        <img src="img/room6.jpg" alt="部屋">
+        <div class="contain__text-area">
+          <h3>リスティング</h3>
+          <p>必需品を完備した快適な宿泊先</p>
+        </div>
+      </div>
+      <div class="contain">
+        <img src="img/room7.jpg" alt="部屋">
+        <div class="contain__text-area">
+          <h3>ホテル</h3>
+          <p>スタイリッシュな宿泊施設とアメニティ・設備</p>
+        </div>
+      </div>
+      <div class="contain">
+        <img src="img/room8.jpg" alt="部屋">
+        <div class="contain__text-area">
+          <h3>ユニークな宿泊先</h3>
+          <p>眠るだけではもったいないお部屋</p>
+        </div>
+      </div>
     </div>
-  </div>
+    <div class="main-force">
+      <div class="title">
+        <h2>日本のバケーションレンタルで人気のアメニティ・設備</h2>
+      </div>
+      <div class="main-force__contents">
+        <div class="card">
+          <i class="fas fa-utensils"></i>
+          <h3>キッチン</h3>
+        </div>
+        <div class="card">
+          <i class="fas fa-wifi"></i>
+          <h3>Wi-Fi</h3>
+        </div>
+        <div class="card">
+          <i class="fas fa-swimmer"></i>
+          <h3>プール</h3>
+        </div>
+        <div class="card">
+          <i class="fas fa-parking"></i>
+          <h3>敷地内無料駐車場</h3>
+        </div>
+        <div class="card">
+          <i class="fas fa-snowflake"></i>
+          <h3>エアコン</h3>
+        </div>
+      </div>
+    </div>
+    <div class="main-fifth">
+      <div class="main-fifth__title">
+        <h2>日本にあるほかの素敵なバケーションレンタル</h2>
+      </div>
+      <div class="fifth-contain">
+        <div class="image">
+          <div class="title">
+            <span>スーパーホスト</span>
+            <img src="img/room1.jpg" alt="部屋">
+          </div>
+        </div>
+        <div class="detail_area">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <span>4.91(34)</span>
+          </div>
+          <div class="detail">
+            <p>個室・Takamatu</p>
+            <p>ゲストハウス屋島2-3 ネコと遊んでください...</p>
+          </div>
+          <div class="price">
+            <p><span>¥2,493</span>/泊</p>
+          </div>
+        </div>
+      </div>
+      <div class="fifth-contain">
+        <div class="image">
+          <div class="title">
+            <span>スーパーホスト</span>
+            <img src="img/room10.jpg" alt="部屋">
+          </div>
+        </div>
+        <div class="detail_area">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <span>4.91(34)</span>
+          </div>
+          <div class="detail">
+            <p>個室・Takamatu</p>
+            <p>ゲストハウス屋島2-3 ネコと遊んでください...</p>
+          </div>
+          <div class="price">
+            <p><span>¥2,493</span>/泊</p>
+          </div>
+        </div>
+      </div>
+      <div class="fifth-contain">
+        <div class="image">
+          <div class="title">
+            <span>スーパーホスト</span>
+            <img src="img/room11.jpg" alt="部屋">
+          </div>
+        </div>
+        <div class="detail_area">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <span>4.91(34)</span>
+          </div>
+          <div class="detail">
+            <p>個室・Takamatu</p>
+            <p>ゲストハウス屋島2-3 ネコと遊んでください...</p>
+          </div>
+          <div class="price">
+            <p><span>¥2,493</span>/泊</p>
+          </div>
+        </div>
+      </div>
+      <div class="fifth-contain">
+        <div class="image">
+          <div class="title">
+            <span>スーパーホスト</span>
+            <img src="img/room12.jpg" alt="部屋">
+          </div>
+        </div>
+        <div class="detail_area">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <span>4.91(34)</span>
+          </div>
+          <div class="detail">
+            <p>個室・Takamatu</p>
+            <p>ゲストハウス屋島2-3 ネコと遊んでください...</p>
+          </div>
+          <div class="price">
+            <p><span>¥2,493</span>/泊</p>
+          </div>
+        </div>
+      </div>
+      <div class="fifth-contain">
+        <div class="image">
+          <div class="title">
+            <span>スーパーホスト</span>
+            <img src="img/room1.jpg" alt="部屋">
+          </div>
+        </div>
+        <div class="detail_area">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <span>4.91(34)</span>
+          </div>
+          <div class="detail">
+            <p>個室・Takamatu</p>
+            <p>ゲストハウス屋島2-3 ネコと遊んでください...</p>
+          </div>
+          <div class="price">
+            <p><span>¥2,493</span>/泊</p>
+          </div>
+        </div>
+      </div>
+      <div class="fifth-contain">
+        <div class="image">
+          <div class="title">
+            <span>スーパーホスト</span>
+            <img src="img/room10.jpg" alt="部屋">
+          </div>
+        </div>
+        <div class="detail_area">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <span>4.91(34)</span>
+          </div>
+          <div class="detail">
+            <p>個室・Takamatu</p>
+            <p>ゲストハウス屋島2-3 ネコと遊んでください...</p>
+          </div>
+          <div class="price">
+            <p><span>¥2,493</span>/泊</p>
+          </div>
+        </div>
+      </div>
+      <div class="fifth-contain">
+        <div class="image">
+          <div class="title">
+            <span>スーパーホスト</span>
+            <img src="img/room11.jpg" alt="部屋">
+          </div>
+        </div>
+        <div class="detail_area">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <span>4.91(34)</span>
+          </div>
+          <div class="detail">
+            <p>個室・Takamatu</p>
+            <p>ゲストハウス屋島2-3 ネコと遊んでください...</p>
+          </div>
+          <div class="price">
+            <p><span>¥2,493</span>/泊</p>
+          </div>
+        </div>
+      </div>
+      <div class="fifth-contain">
+        <div class="image">
+          <div class="title">
+            <span>スーパーホスト</span>
+            <img src="img/room12.jpg" alt="部屋">
+          </div>
+        </div>
+        <div class="detail_area">
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <span>4.91(34)</span>
+          </div>
+          <div class="detail">
+            <p>個室・Takamatu</p>
+            <p>ゲストハウス屋島2-3 ネコと遊んでください...</p>
+          </div>
+          <div class="price">
+            <p><span>¥2,493</span>/泊</p>
+          </div>
+        </div>
+      </div>
+      <div class="all-bottom">
+        <span>すべて表示</span>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+    <div class="main-sitemap">
+      <nav>
+        <ol class="breadcrumbs">
+          <li><a href="#" >Airbnb</a></li>
+          <li><a href="#">日本</a></li>
+        </ol>
+      </nav>
+    </div>
+  </main>
   <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
+    <div class="footer__left">
+      <ul class="site-map">
+        <li>© 2021 Airbnb, Inc. All rights reserved</li>
+        <li><a href="#">プライバシー</a></li>
+        <li><a href="#">利用規約</a></li>
+        <li><a href="#">サイトマップ</a></li>
+      </ul>
+    </div>
+    <div class="footer__right">
+      <ul class="sns">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
     </div>
   </footer>
 </body>
