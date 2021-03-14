@@ -1,0 +1,144 @@
+@media screen and (max-width: 743px) {
+
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .header-left {
+      padding-left: 5%;
+    .title{
+      display: none;
+    }
+  }
+
+  .header-right {
+    padding-right: 5%;
+  }
+
+  .main-top {
+    height: 400px;
+    &_left {
+      width: 100%;
+      height: 100%;
+      box-shadow: none;
+      margin: 0;
+      &__input-area {
+        height: 15%;
+      }
+      &__input-date{
+        height: 15%;
+      }
+      &__input-number{
+        height: 15%;
+      }
+      &__input-buttom{
+        height: 13%;
+      }
+    }
+    &_right {
+      display: none;
+    }
+  }
+
+  .main-second {
+    width: 90%;
+    margin: 0 auto;
+    height: 1800px;
+    .title {
+      height: 7%;
+    }
+    .contain {
+      min-height: 482.13px;
+      max-width: 337.5px;
+      min-height: 529.09px;
+      width: 100%;
+      height: 30%;
+      margin: 0 auto;
+      margin-bottom: 5%;
+      &__text-area{
+        .price {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .main-third {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    .contain-list {
+      overflow: scroll hidden;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: none;    /* IE, Edge 対応 */
+      scrollbar-width: none;       /* Firefox 対応 */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .contain {
+      width: 100%;
+      height: 240px;
+      float: none;
+      display: inline-block;
+    }
+  }
+
+  .main-force {
+    width: 90%;
+    margin: 0 auto;
+    &__contents {
+      height: 100%;
+      overflow: scroll hidden;
+      padding-top: 5%;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: none;    /* IE, Edge 対応 */
+      scrollbar-width: none;       /* Firefox 対応 */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .card {
+        display: inline-block;
+        float: none;
+        height: 50%;
+        width: 70%;
+      }
+    }
+  }
+
+  .main-fifth {
+    width: 90%;
+    height: 2780px;
+    margin: 0 auto;
+    padding-top: 10%;
+    .fifth-contain {
+      height: auto;
+      width: 100%;
+      float: none;
+    }
+    .all-bottom {
+      width: 100%;
+    }
+  }
+
+  .main-sitemap{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer__left {
+    width: 100%;
+  }
+  .footer__right {
+    display: none;
+  }
+
+  footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
