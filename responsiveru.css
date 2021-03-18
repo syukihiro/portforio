@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (max-width: 743px) {
+@media screen and (max-width: 480px) {
   h1 {
     font-size: 22px; }
 
@@ -116,5 +116,18 @@
   footer {
     width: 90%;
     margin: 0 auto; } }
+/* 959px以下に適用されるCSS（タブレット用） */
+@media screen and (max-width: 1024px) {
+  .main-top_left {
+    width: 45%; }
+
+  .main-third {
+    height: 400px; }
+
+  .main-force {
+    height: 400px; }
+
+  .main-fifth .fifth-contain {
+    height: 40%; } }
 
 /*# sourceMappingURL=responsiveru.css.map */
