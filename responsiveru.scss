@@ -1,3 +1,24 @@
+/* 959px以下に適用されるCSS（タブレット用） */
+@media screen and (max-width: 1024px) {
+  .main-top_left {
+    width: 45%;
+  }
+
+  .main-third {
+    height: 400px;
+  }
+
+  .main-force {
+    height: 400px;
+  }
+
+  .main-fifth {
+    .fifth-contain {
+      height: 40%;
+    }
+  }
+}
+
 @media screen and (max-width: 480px) {
 
   h1 {
@@ -68,6 +89,7 @@
 
   .main-third {
     width: 90%;
+    height: 500px;
     margin: 0 auto;
     padding-top: 50px;
     .contain-list {
@@ -90,6 +112,7 @@
 
   .main-force {
     width: 90%;
+    height: 300px;
     margin: 0 auto;
     &__contents {
       height: 100%;
@@ -140,26 +163,5 @@
   footer {
     width: 90%;
     margin: 0 auto;
-  }
-}
-
-/* 959px以下に適用されるCSS（タブレット用） */
-@media screen and (max-width: 1024px) {
-  .main-top_left {
-    width: 45%;
-  }
-
-  .main-third {
-    height: 400px;
-  }
-
-  .main-force {
-    height: 400px;
-  }
-
-  .main-fifth {
-    .fifth-contain {
-      height: 40%;
-    }
   }
 }
