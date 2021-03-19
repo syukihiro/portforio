@@ -27,6 +27,10 @@
   h2 {
     font-size: 22px;
   }
+  main {
+    width: 95%;
+  }
+
   .header-left {
       padding-left: 5%;
     .title{
@@ -64,7 +68,6 @@
   }
 
   .main-second {
-    width: 90%;
     margin: 0 auto;
     height: 1800px;
     .title {
@@ -88,7 +91,6 @@
   }
 
   .main-third {
-    width: 90%;
     height: 500px;
     margin: 0 auto;
     padding-top: 50px;
@@ -111,7 +113,6 @@
   }
 
   .main-force {
-    width: 90%;
     height: 300px;
     margin: 0 auto;
     &__contents {
@@ -135,8 +136,7 @@
   }
 
   .main-fifth {
-    width: 90%;
-    height: 2780px;
+    height: 100%;
     margin: 0 auto;
     padding-top: 10%;
     .fifth-contain {
@@ -161,7 +161,7 @@
   }
 
   footer {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
 }

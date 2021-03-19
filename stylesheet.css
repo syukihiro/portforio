@@ -9,7 +9,7 @@ a {
 
 header {
   max-width: 1280px;
-  width: 90%;
+  width: 95%;
   height: 64px;
   margin: 0 auto; }
 
@@ -44,7 +44,7 @@ header {
     font-weight: 600; }
 
 main {
-  width: 90%;
+  width: 95%;
   max-width: 1280px;
   margin: 0 auto; }
 
@@ -233,7 +233,7 @@ main {
       color: #222; }
 
 .main-third {
-  width: 90%;
+  width: 95%;
   height: 500px; }
   .main-third .title {
     padding-left: 1%; }
@@ -255,7 +255,7 @@ main {
         color: #717171; }
 
 .main-force {
-  width: 90%;
+  width: 100%;
   height: 300px; }
   .main-force .title {
     padding-left: 1%; }
@@ -275,7 +275,7 @@ main {
       padding: 2% 0 0 14%; }
 
 .main-fifth {
-  width: 90%;
+  width: 100%;
   height: 800px; }
   .main-fifth__title {
     padding-left: 1%; }
@@ -316,7 +316,7 @@ main {
 
 .main-sitemap {
   max-width: 1280px;
-  width: 90%; }
+  width: 100%; }
   .main-sitemap .breadcrumbs {
     margin: 0;
     padding: 5% 0 5% 1%;
@@ -334,7 +334,7 @@ main {
 
 footer {
   max-width: 1280px;
-  width: 90%;
+  width: 95%;
   height: 64px;
   margin: 0 auto;
   border-top: 1px solid #EBEBEB; }

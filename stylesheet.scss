@@ -65,7 +65,7 @@ a{
 
 header {
   max-width: $max-width;
-  width: 90%;
+  width: 95%;
   height: 64px;
   margin: 0 auto;
 }
@@ -107,7 +107,7 @@ header {
 }
 
 main {
-  width: 90%;
+  width: 95%;
   max-width: $max-width;
   margin: 0 auto;
 }
@@ -306,7 +306,7 @@ main {
 }
 
 .main-third {
-  width: 90%;
+  width: 95%;
   height: 500px;
   .title {
     padding-left: 1%;
@@ -329,7 +329,7 @@ main {
 }
 
 .main-force {
-  width: 90%;
+  width: 100%;
   height: 300px;
   .title {
     padding-left: 1%;
@@ -354,7 +354,7 @@ main {
 }
 
 .main-fifth {
-  width: 90%;
+  width: 100%;
   height: 800px;
   &__title {
     padding-left: 1%;
@@ -391,7 +391,7 @@ main {
 
 .main-sitemap{
   max-width: $max-width;
-  width: 90%;
+  width: 100%;
 
   .breadcrumbs{
     margin: 0;
@@ -419,7 +419,7 @@ main {
 
 footer {
   max-width: $max-width;
-  width: 90%;
+  width: 95%;
   height: 64px;
   margin: 0 auto;
   border-top: 1px solid #EBEBEB;
